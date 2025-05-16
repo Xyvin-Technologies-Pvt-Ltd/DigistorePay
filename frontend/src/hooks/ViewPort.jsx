@@ -3,7 +3,7 @@ import { useState, useEffect, useContext, createContext } from "react";
 const viewportContext = createContext({});
 
 export const ViewportProvider = ({ children }) => {
-  // This is the exact same logic that we previously had in our hook
+  // This is the exact same logic that we previously had in our hooks
 
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
