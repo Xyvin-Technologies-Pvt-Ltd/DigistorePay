@@ -34,6 +34,7 @@ if (cluster.isMaster) {
     "http://localhost:5173",
     "capacitor://localhost",
     "https://localhost",
+    "https://digistorepay.com",
     "https://dev-digistorepay.azurewebsites.net",
     "https://digistorepaydev-apis.azurewebsites.net/",
     "https://digistorepay-docker-dev-gxg2g5acejfpfrb3.centralindia-01.azurewebsites.net",
