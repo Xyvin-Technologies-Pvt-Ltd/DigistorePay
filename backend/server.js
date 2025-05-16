@@ -29,35 +29,47 @@ if (cluster.isMaster) {
 } else {
   app.set("trust proxy", 1); // Trust the first proxy
 
-  // Whitelist for allowed origins 
+  // Whitelist for allowed origins
   const whitelist = [
     "http://localhost:5173",
     "capacitor://localhost",
     "https://localhost",
     "https://digistorepay.com",
+    "https://www.digistorepay.com",
+    "https://api.digistorepay.com",
     "https://dev-digistorepay.azurewebsites.net",
-    "https://digistorepaydev-apis.azurewebsites.net/",
+    "https://digistorepaydev-apis.azurewebsites.net",
     "https://digistorepay-docker-dev-gxg2g5acejfpfrb3.centralindia-01.azurewebsites.net",
     "https://dev.digistorepay.com",
   ];
 
   // CORS options delegate function
   const corsOptionsDelegate = function (req, callback) {
-    var corsOptions;
-    if (whitelist.indexOf(req.header("Origin")) !== -1) {
+    const origin = req.header("Origin");
+    let corsOptions;
+
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
       corsOptions = {
         origin: true, // reflect (enable) the requested origin in the CORS response
         credentials: true, // include credentials (cookies, authorization headers, etc.)
         optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+        methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+        allowedHeaders: "Content-Type,Authorization,X-Requested-With,Accept",
+        exposedHeaders: "Content-Length,Content-Range",
       };
     } else {
       corsOptions = {
         origin: false, // disable CORS for this request
       };
+      console.log(`Blocked origin: ${origin}`);
     }
     callback(null, corsOptions); // callback expects two parameters: error and options
   };
 
+  // Enable pre-flight requests for all routes
+  app.options("*", cors(corsOptionsDelegate));
+
+  // Apply CORS for all routes
   app.use(cors(corsOptionsDelegate));
 
   app.use(express.urlencoded({ extended: true }));
@@ -81,7 +93,7 @@ if (cluster.isMaster) {
       createParentPath: true,
     })
   );
- 
+
   const dbPassword = encodeURIComponent(process.env.DB_PASSWORD);
   const conString = `postgresql://${process.env.DB_USERNAME}:${dbPassword}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
 
@@ -94,18 +106,21 @@ if (cluster.isMaster) {
       resave: false,
       saveUninitialized: false,
       cookie: {
-        secure: process.env.NODE_ENV,
+        secure: process.env.NODE_ENV !== "development",
         sameSite: "None",
         httpOnly: true,
       },
     })
   );
 
-  sequelize.authenticate().then(() => {
-    console.log("Database connected");
-  }).catch((err) => {
-    console.log("Database connection failed", err);
-  });
+  sequelize
+    .authenticate()
+    .then(() => {
+      console.log("Database connected");
+    })
+    .catch((err) => {
+      console.log("Database connection failed", err);
+    });
 
   function getISTDateTime() {
     const now = new Date();
@@ -150,7 +165,7 @@ if (cluster.isMaster) {
   app.use(globalErrorHandler);
 
   const PORT = process.env.PORT || 8080;
-  
+
   app.listen(PORT, () => {
     console.log(`Worker ${process.pid} started on port ${PORT}`);
   });
