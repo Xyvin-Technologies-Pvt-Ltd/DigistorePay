@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 2px 4px;
+  padding-right: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1rem 0.2rem;
+}
+
+.input {
+  border-radius: 5px;
+  outline: #36448d;
+  border-color: #36448d;
+  text-align: center;
+  padding: 0.9rem 1.6rem;
+  width: 2.4rem;
+  margin-bottom: 12px;
+}
+.value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 4px;
+}
+.info {
+  flex-grow: 1;
+  padding: 0 8px;
+}
+.icon {
+  font-size: 22px;
+  margin: 10px 4px;
+  line-height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+.icon:active {
+  transform: scale(0.95);
+  color: var(--honoblue);
+}
+.icon:focus {
+  outline: none;
+}
+.commision {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.title {
+  margin: 2px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.blue {
+  color: var(--honoblue);
+}
+.error {
+  margin: 0;
+  font-size: 10px;
+  color: red;
+  font-weight: 500;
+}
+@media (min-width: 1035px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  .commision {
+    font-size: 16px;
+  }
+  icon {
+    font-size: 32px;
+    margin: 10px 6px;
+  }
+  .input {
+    width: 100%;
+    font-size: 16px;
+    padding: 1rem 2rem;
+    width: 3rem;
+  }
+  .card {
+    margin: 1.7rem 0.2rem;
+  }
+}

@@ -1,0 +1,88 @@
+.container {
+  padding-top: 0;
+  border-radius: 8px;
+}
+
+.results {
+  padding: 8px 12px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.resulthead {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--honoblue);
+}
+.income {
+  width: 100%;
+  margin-top: 0;
+  color: var(--honoblue);
+  font-size: 36px;
+  font-weight: 750;
+  padding-top: 0;
+  line-height: 2;
+}
+.rescontainer {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.btn {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.icon {
+  font-size: 26px;
+}
+.info {
+  margin-top: 16px;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.sub {
+  margin: 0;
+  padding-left: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 24px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 16px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1rem 0.1rem;
+}
+.service {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.amount {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+
+  color: var(--honoblue);
+}
+@media (min-width: 1035px) {
+  .service {
+    font-size: 20px;
+  }
+  .amount {
+    font-size: 24px;
+  }
+  .card {
+    padding: 18px 10px;
+    margin: 1.4rem 0.1rem;
+  }
+}

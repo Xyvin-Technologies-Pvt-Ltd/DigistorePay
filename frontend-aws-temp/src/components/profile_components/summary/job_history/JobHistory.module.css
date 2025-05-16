@@ -1,0 +1,109 @@
+.container {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: calc(100% - 2rem);
+}
+
+.head {
+  margin: 0;
+  color: var(--honoblue);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--honoblue);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--honoblue);
+}
+
+.button {
+  margin: 0;
+}
+
+.button:hover {
+  color: var(--orangepeel);
+  cursor: pointer;
+}
+
+.subhead {
+  margin: 0;
+  color: grey;
+  font-style: italic;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  text-align: justify;
+}
+.card2 {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+.status {
+  font-weight: 500;
+  text-transform: capitalize;
+  justify-self: end;
+}
+
+.priority {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-transform: capitalize;
+}
+
+#complete {
+  color: green;
+}
+#inprogress {
+  color: orange;
+}
+
+#inqueue {
+  color: var(--honoblue);
+}
+#rejected {
+  color: red;
+}
+
+#low {
+  color: grey;
+}
+
+#medium {
+  color: orange;
+}
+
+#high {
+  color: red;
+}

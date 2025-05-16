@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.lineone {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--jetblack);
+}
+
+.linetwo {
+  margin: 0 auto;
+  justify-self: center;
+  color: var(--jetblack);
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 1.5rem;
+  width: 90%;
+}
+
+.inputs label {
+  font-weight: 700;
+  color: var(--jetblack);
+}
+.inputs p {
+  color: red;
+  margin: 0;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  border: 1px solid var(--honoblue);
+  border-radius: 4px;
+}
+
+.input span {
+  margin: 0px 1.5rem;
+  color: var(--orangepeel);
+}
+
+.input input {
+  height: 3rem;
+  margin-top: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: var(--jetblack);
+}
+
+.hide_password {
+  cursor: pointer;
+  color: grey !important;
+}
+
+.btnContainer {
+  display: flex;
+  margin: 2.5rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.forgot {
+  font-weight: 400;
+  align-self: center;
+}
+
+.forgot a:hover {
+  color: var(--honoblue);
+}
+
+.loginOptionBox input {
+  appearance: none;
+}
+
+@media (min-width: 576px) {
+  .lineone {
+    font-size: 3rem;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header {
+    margin-top: 2.5rem;
+  }
+
+  .lineone {
+    font-size: 2.5rem;
+  }
+
+  .input {
+    height: 3.5rem;
+  }
+}
+
+.loginOptionBox label .radioBtn {
+  appearance: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .lineone {
+    font-size: 3rem;
+  }
+
+  .input {
+    height: 4rem;
+  }
+}

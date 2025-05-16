@@ -1,0 +1,330 @@
+.container {
+  /* background-color: var(--snowwhite); */
+  background-color: #080c30;
+  display: block;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+.contestprize {
+  background-color: #080c30;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.contestprize h2 {
+  font-family: "Pavelt", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.criteria {
+  background-color: #080c30;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.criteriacontent p {
+  color: white;
+  font-size: 1.2em;
+  font-family: poppins;
+  padding: 1rem;
+  text-align: center;
+}
+
+.criteriacontent h2 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+  font-family: "Pavelt", sans-serif;
+}
+
+.prizepool {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.bestcontestprize,
+.bestcontestprize2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.contestcard1,
+.contestcard2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #f8f9fa;
+  border-radius: 50px 10px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: 80%;
+}
+
+.cardcontent,
+.cardcontent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cardcontent img,
+.cardcontent2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.cardcontent img {
+  animation: rotateImage 5s linear infinite;
+}
+
+.cardtext {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cardtext h3,
+.cardtext h2 {
+  color: black;
+  margin-top: 1rem;
+}
+
+/* ----- CSS of below prize pool section ----- */
+
+.belowprize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #080c30;
+  color: #fff;
+  text-align: center;
+}
+
+.prizecontainer {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.prizerow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prizecol {
+  flex: 1;
+}
+
+.notecontent {
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.notecontentalert {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid transparent;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.notecontent h1 {
+  color: #000;
+}
+
+.prizerow3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.prospectus {
+  padding: 2rem;
+  flex: 1;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.prospectus1 {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 10px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  /* padding: 1rem 0; */
+}
+
+.prospectusdownload {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0.6rem 0.6rem;
+  width: 180px;
+  background-color: var(--honoblue);
+  color: #fff;
+}
+
+.prospectusdownload:hover {
+  color: #000;
+  background-color: var(--snowwhite);
+  border: 2px solid #000;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (min-width: 577px) {
+  .prizepool {
+    flex-direction: column;
+  }
+  .contestcard1,
+  .contestcard2 {
+    width: 90%;
+    flex-direction: row;
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  .cardcontent,
+  .cardcontent2 {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .cardcontent img,
+  .cardcontent2 img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .criteriacontent,
+  .criteriacontent p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .criteriacontent h2 {
+    font-size: 2.5em;
+  }
+  .prizerow2 {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 993px) {
+  .bestcontestprize,
+  .bestcontestprize2 {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .criteriacontent p {
+    padding: 1rem;
+  }
+  .contestcard1 {
+    width: 60%;
+    height: 250px;
+  }
+
+  .contestcard2 {
+    width: 30%;
+  }
+
+  .prizerow2 {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .bestcontestprize,
+  .bestcontestprize2 {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+
+  .criteriacontent,
+  .criteriacontent p {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  .criteriacontent h2 {
+    font-size: 2.5rem;
+  }
+  .prizerow2 {
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .evaluationbox,
+  .evaluationbox2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notecontent {
+    width: 80%;
+  }
+
+  .prospectusdownload {
+    padding: 0.8rem 1rem;
+  }
+
+  .prospectus1 {
+    width: 84%;
+  }
+}

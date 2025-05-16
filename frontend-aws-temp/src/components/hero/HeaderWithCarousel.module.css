@@ -1,0 +1,137 @@
+/* Mobile-first styles */
+.HeroSection {
+  padding: 1rem;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--snowwhite);
+}
+
+.HeroContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 16px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically by default */
+}
+
+.HeroContent {
+  text-align: center;
+}
+
+.companyName {
+  background-color: var(--white);
+  border-radius: 15px;
+  max-width: fit-content;
+  padding: 0.5rem;
+  border: 1px solid var(--jetblack);
+  display: inline-block;
+}
+
+.digiName {
+  color: var(--jetblack);
+}
+
+.HeroTitle {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--honoblue);
+  text-align: center; /* Center text by default */
+}
+
+.HeroDescription {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 24px;
+  max-width: 100%;
+  text-align: center; /* Center text by default */
+}
+
+.HeroBtnPrimary,
+.HeroBtnSecondary {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 10px;
+  width: 180px;
+}
+
+.HeroBtnPrimary {
+  color: var(--white);
+  background-color: var(--honoblue);
+}
+
+/* .HeroBtnPrimary:hover {
+  background-color: #ffffff;
+  color: var(--honoblue);
+} */
+
+.HeroBtnSecondary {
+  color: var(--jetblack);
+  border: 1px solid var(--jetblack);
+  background-color: var(--white);
+}
+
+/* .HeroBtnSecondary:hover {
+  background-color: #f3f4f6;
+} */
+
+.HeroImageContainer {
+  margin-top: 16px; /* Space between content and screen border */
+  flex: 1;
+}
+/* Medium screens  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .HeroTitle {
+    font-size: 2.5rem;
+  }
+
+  .HeroDescription {
+    font-size: 1.2rem;
+    max-width: 850px;
+  }
+
+  .HeroBtnPrimary,
+  .HeroBtnSecondary {
+    margin-right: 12px;
+    width: auto;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .HeroContainer {
+    display: grid;
+    grid-template-columns: 7fr 5fr; /* Side by side on larger screens */
+    background-color: var(--snowwhite);
+  }
+
+  .HeroTitle {
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  .HeroDescription {
+    font-size: 1.5rem;
+    max-width: 700px;
+    text-align: start;
+  }
+
+  .HeroImageContainer {
+    margin-top: 0; /* Reset margin for larger screens */
+  }
+
+  .HeroBtnContainer {
+    display: flex;
+    text-align: start;
+  }
+}

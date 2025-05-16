@@ -1,0 +1,373 @@
+.container {
+  /* background-color: var(--snowwhite); */
+  background-color: #080c30;
+  display: block;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+/* ----- Landing Section CSS ----- */
+
+.collegefest {
+  padding: 3rem;
+  background-color: #080c30;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("/images/collegefest/landingpagebackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.collegefestanimation {
+  animation: fadeInUp 4s forwards;
+  max-width: 100%;
+}
+
+.collegefestanimation h1 {
+  font-size: 2rem;
+  margin-top: 5%;
+  font-weight: bold;
+  font-family: "Pavelt", sans-serif;
+}
+
+.collegefestanimation p {
+  font-family: Poppins, sans-serif;
+}
+
+.learnmorebutton {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 10px;
+  width: 180px;
+  background-color: var(--honoblue);
+  color: #fff;
+}
+
+.learnmorebutton:hover {
+  color: #000;
+  background-color: var(--snowwhite);
+  border: 2px solid #000;
+}
+
+/* ----- End of Landing Section CSS ----- */
+
+/* ----- Card Layout CSS ----- */
+
+.cardlayout {
+  display: block;
+  margin-top: 40px;
+  background-color: #080c30;
+}
+
+.cardone,
+.cardtwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.cardone {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.cardone1,
+.cardtwo2,
+.card3,
+.card4,
+.card5 {
+  padding: 30px;
+  margin: 2rem auto;
+  border-radius: 10px 10px;
+  background-color: white;
+  opacity: 1;
+  transform: translateY(0);
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  color: #080c30;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+.cardicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardtitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cardtext {
+  text-align: justify;
+  color: #080c30;
+}
+
+/* ----- End of Card Layout CSS ----- */
+
+/* ----- College Contest Banner CSS ----- */
+
+.competition {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.competition img {
+  width: 100%;
+  height: 100%;
+}
+
+.competitioncontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.7rem;
+}
+
+.competitioncontenttext {
+  background-color: white;
+  color: var(--jetblack);
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 1s forwards;
+}
+
+.competition h2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  color: rgb(9, 9, 9);
+  font-family: "Pavelt", sans-serif;
+}
+
+.competitiongravity {
+  background-color: white;
+  color: var(--jetblack);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gravitysection {
+  width: 80%;
+  margin: auto;
+}
+
+.gravitysection p {
+  font-size: 1.2rem;
+}
+
+/* end of college contest banner css */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  media query */
+
+@media (min-width: 576px) {
+  .collegefest {
+    padding: 2rem;
+  }
+
+  .collegefestanimation {
+    max-width: 90%;
+  }
+
+  .collegefestanimation h1 {
+    font-size: 2.5rem;
+  }
+
+  .learnmorebutton {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .collegefest {
+    padding: 3rem;
+  }
+
+  .collegefestanimation {
+    max-width: 70%;
+  }
+
+  .collegefestanimation h1 {
+    font-size: 3rem;
+  }
+
+  .learnmorebutton {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .cardlayout {
+    display: block;
+  }
+
+  .cardone1,
+  .cardtwo2,
+  .card3,
+  .card4,
+  .card5 {
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  .competition {
+    height: 350px;
+  }
+
+  .competitioncontent {
+    padding: 0 0.9rem;
+    width: 96%;
+  }
+
+  .competition {
+    height: auto;
+  }
+
+  .competitioncontent {
+    padding: 0;
+    width: 100%;
+  }
+
+  .gravitysection {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .collegefest {
+    padding: 3rem;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .collegefestanimation {
+    max-width: 50%;
+  }
+
+  .collegefestanimation h1 {
+    font-size: 3rem;
+  }
+
+  .learnmorebutton {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-right: 2rem;
+  }
+
+  .cardlayout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cardone1,
+  .cardtwo2,
+  .card3,
+  .card4,
+  .card5 {
+    width: 75%;
+    margin: 5rem auto;
+  }
+
+  .cardtwo2,
+  .card3,
+  .card4,
+  .card5 {
+    width: 50%;
+  }
+
+  .card4,
+  .card5 {
+    margin-top: 20%;
+    margin-left: 1rem;
+  }
+
+  .cardtwo2 {
+    margin-top: 10%;
+  }
+
+  .cardtwo2,
+  .card3 {
+    margin-right: 1rem;
+  }
+
+  .cardtwo2,
+  .card4 {
+    margin-bottom: 5px;
+  }
+
+  .card3,
+  .card5 {
+    margin-top: 2rem;
+  }
+}
+
+/* ----- End of media query ----- */

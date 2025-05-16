@@ -1,0 +1,44 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1rem 1rem;
+  /* box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2); */
+  border-radius: 15px;
+  margin: 1rem;
+}
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: var(--jetblack);
+}
+
+.button {
+  background-color: var(--honoblue);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.button:hover {
+  background-color: var(--orangepeel);
+  color: var(--jetblack);
+}
+
+.billDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  background-color: var(--snowwhite);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}

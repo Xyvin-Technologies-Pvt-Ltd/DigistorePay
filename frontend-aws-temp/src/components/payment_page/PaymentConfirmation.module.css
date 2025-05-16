@@ -1,0 +1,54 @@
+.mainLayout {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subLayout {
+  padding-top: 10rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+#failIcon {
+  color: red;
+}
+
+#successIcon {
+  color: green;
+}
+
+#processIcon {
+  color: var(--honoblue);
+}
+
+.rotatedIcon {
+  animation: rotateInfinite 2.5s linear infinite;
+}
+
+.content {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.content2 {
+  color: gray;
+  text-align: center;
+}
+
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

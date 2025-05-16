@@ -1,0 +1,120 @@
+.mainContainer {
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+#styledInput {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+}
+
+#styledInput:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+.input {
+  margin-bottom: 1rem;
+  padding: 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+  height: auto;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  border-radius: 4px;
+}
+
+.input input {
+  height: 2.5rem;
+  margin-top: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: var(--jetblack);
+}
+.input span {
+  margin: 0px 1.5rem;
+  color: var(--orangepeel);
+}
+
+#errors {
+  color: red;
+  margin: 0 0 1rem 0;
+}
+
+.btn {
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: var(--honoblue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border: none;
+  align-self: center;
+}
+
+.btnDisabled {
+  margin-top: 1rem;
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border: none;
+  align-self: center;
+  opacity: 0.35;
+  background-color: grey;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: var(--orangepeel);
+  color: var(--jetblack);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  background-color: grey;
+  pointer-events: none;
+}
+
+.miniContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelStyle {
+  font-weight: 700;
+  color: var(--jetblack);
+}
+
+/* @media (min-width: 576px) {
+  .mainContainer {
+    padding: 2rem 3rem;
+  }
+} */

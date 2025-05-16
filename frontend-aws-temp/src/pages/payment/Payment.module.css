@@ -1,0 +1,83 @@
+.subLayout {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -1rem;
+}
+
+.backlogo {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.heading {
+  margin-bottom: 0rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.detail {
+  color: gray;
+  font-size: 0.9rem;
+  margin-top: 0rem;
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid gray;
+  color: gray;
+}
+
+.subLayout2,
+.subLayout3,
+.paybutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.subLayout2 {
+  padding-top: 1rem;
+}
+
+.content {
+  text-align: center;
+  padding: 1rem 0;
+  color: gray;
+  font-weight: 0.5rem;
+}
+
+.lowerContent {
+  text-align: center;
+  font-weight: bold;
+  color: var(--jetblack);
+  font-size: 1.2rem;
+}
+
+.button {
+  color: var(--honoblue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (min-width: 568px) {
+  .subLayout {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .paymentDetails {
+    text-align: center;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .circletimer {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,24 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.left {
+  grid-column: 1/2;
+}
+
+.right {
+  grid-column: 1/2;
+}
+
+@media only screen and (min-width: 992px) {
+  .mainContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .right {
+    grid-column: 2/3;
+  }
+}

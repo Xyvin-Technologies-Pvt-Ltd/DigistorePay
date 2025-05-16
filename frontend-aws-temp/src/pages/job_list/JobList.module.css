@@ -1,0 +1,196 @@
+.mainLayout {
+  padding: 1rem 1rem;
+  background-color: var(--snowwhite);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 1rem;
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.JobListContainer {
+  padding: 0.5rem;
+}
+
+.JobListMain {
+  margin-top: 0.6rem;
+  background-color: var(--white);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.JobList {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.serviceName {
+  font-weight: bold;
+  color: var(--honoblue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.JobListMain:hover {
+  .serviceName {
+    color: var(--orangepeel);
+  }
+}
+
+.time {
+  font-weight: bold;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priority {
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0rem 1rem;
+  justify-self: end;
+}
+
+#high {
+  background-color: red;
+}
+
+#medium {
+  background-color: orange;
+}
+
+#low {
+  background-color: gray;
+}
+
+.status {
+  font-weight: bold;
+  justify-self: end;
+  text-transform: capitalize;
+}
+
+#inqueue {
+  color: var(--honoblue);
+}
+
+#inProgress {
+  color: orange;
+}
+
+#completed {
+  color: green;
+}
+
+#rejected {
+  color: red;
+}
+
+.noHistory {
+  text-align: center;
+}
+
+.footer {
+  padding: 0.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageBtn {
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.pageBtn:hover {
+  transform: scale(1.5);
+}
+
+.symbols {
+  margin: 0;
+  padding: 0;
+}
+
+.pagenation {
+  border-radius: 8px;
+  border: 1px solid var(--honoblue);
+  padding: 0.2rem 0.7rem;
+  color: var(--white);
+  background-color: var(--honoblue);
+  margin: 0px 4px;
+  font-weight: 500;
+}
+
+.pagenation p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .priority {
+    padding: 0rem 1rem;
+  }
+
+  .status {
+    padding-right: 0.5rem;
+  }
+
+  .name {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .sort {
+    margin-top: -2.4rem;
+    margin-left: 75%;
+  }
+
+  .filter {
+    margin-top: 1rem;
+  }
+}

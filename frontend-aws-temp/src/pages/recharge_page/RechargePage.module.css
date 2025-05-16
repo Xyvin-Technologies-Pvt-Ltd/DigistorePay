@@ -1,0 +1,19 @@
+.service_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .service_content {
+    grid-template-columns: 4fr 5fr;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .service_content {
+    grid-template-columns: 4fr 6fr;
+  }
+}

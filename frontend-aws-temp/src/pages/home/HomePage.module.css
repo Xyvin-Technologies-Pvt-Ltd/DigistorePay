@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --logo-gap: 1.2rem;
+}
+
+.container {
+  background-color: var(--snowwhite);
+  display: block;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+.container_choice {
+  background-color: var(--snowwhite);
+  display: block;
+  min-height: calc(100vh - 80px);
+}
+.imageContainer {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContainer {
+  background-color: var(--snowwhite);
+  font-family: "Poppins", sans-serif;
+}
+
+.whyDigiStorePay {
+  padding: 60px 0;
+}
+
+.subHeading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--honoblue);
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cardGrid > * {
+  flex: 1 1 100%; /* Full width on small devices */
+  max-width: 100%; /* Full width on small devices */
+}
+
+/*Patners Section Code*/
+
+.partnersSection {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Center align the section title */
+}
+
+.logoSlider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  width: 200%; /* Double the width to ensure continuous scrolling */
+}
+
+.logoList {
+  display: flex;
+  gap: var(--logo-gap); /* Adjust gap between logos */
+  animation: scroll 20s linear infinite; /* Continuous scroll animation */
+}
+
+.logoItems {
+  flex: 0 0 auto;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.logoItems img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  aspect-ratio: 3/1;
+  margin: 0 5px; /* Adjust margin for smaller devices */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move the logos to the left by half their width */
+  }
+}
+
+/* Services css begin here */
+
+.customContainer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.customRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.customCol {
+  flex: 1 1 25%; /* Small size for app-like icons */
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 0.25rem; /* Smaller padding for tighter spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardComponent {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100px; /* Small height for app-like icons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  border-radius: 15px; /* More rounded corners for app-like icons */
+  overflow: hidden;
+}
+
+.cardComponent:hover {
+  transform: scale(1.05);
+}
+
+.cardImgContainer {
+  width: 100%;
+  height: 60px; /* Smaller height for the image */
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardBody {
+  width: 100%;
+  padding: 5px; /* Smaller padding for text */
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: 0.75rem; /* Smaller font size for app-like icons */
+  font-weight: bold;
+  margin: 5px 0;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/*contact page css*/
+
+/* Mobile-first styles */
+.contactContainer {
+  padding: 0 20px;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.contactRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contactColForm,
+.contactColImage {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contactColImage {
+  order: -1; /* Move image to the top */
+}
+
+.contactTextCenter {
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: calc(100vw - 20px);
+  color: var(--jetblack);
+  padding: 1rem;
+}
+
+.contactInputContainer {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInput,
+.contactTextarea {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contactInput:focus,
+.contactTextarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contactBtn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: var(--honoblue);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.contactBtn:hover {
+  background-color: var(--honoblue);
+  border-color: var(--honoblue);
+}
+
+.contactImage {
+  max-width: 80%;
+  height: auto;
+}
+/* Tablet and medium view */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contactRow {
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+  }
+
+  .contactColForm,
+  .contactColImage {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contactColImage {
+    order: -1; /* Ensure image is on top */
+    margin-bottom: 2rem;
+  }
+
+  .contactImage {
+    max-width: 50%; /* Reduce image size */
+  }
+
+  .contactInputContainer {
+    width: 100%;
+    max-width: 500px; /* Adjust the max-width for medium view */
+  }
+
+  .contactInput,
+  .contactTextarea {
+    max-width: 500px; /* Adjust the max-width for medium view */
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .contactRow {
+    flex-direction: row;
+    justify-content: center; /* Center align items */
+    align-items: center; /* Center align items */
+    text-align: left;
+  }
+
+  .contactColForm,
+  .contactColImage {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .contactColForm {
+    padding-right: 2rem;
+  }
+
+  .contactColImage {
+    order: 0; /* Reset order */
+    display: flex;
+    justify-content: end;
+  }
+
+  .contactImage {
+    max-width: 65%;
+    margin-right: 3rem;
+  }
+
+  .contactInputContainer {
+    width: 100%;
+    max-width: 500px; /* Adjust the max-width for large view */
+  }
+
+  .contactInput,
+  .contactTextarea {
+    max-width: 500px; /* Adjust the max-width for large view */
+  }
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  .customCol {
+    flex: 1 1 calc(33.33% - 0.75rem);
+    max-width: calc(33.33% - 0.75rem);
+    padding: 0.5rem;
+  }
+
+  .cardComponent {
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  .cardImgContainer {
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .cardImg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .cardBody {
+    padding: 10px;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .whyDigiStorePay {
+    padding: 0 10px;
+  }
+
+  .cardGrid {
+    gap: 20px;
+  }
+
+  .logoSlider {
+    padding: 0 20px;
+  }
+
+  .partnersSection {
+    padding: 64px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .customCol {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+
+  .cardComponent {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .cardImgContainer {
+    height: 100px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .cardImg {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .cardBody {
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,103 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  font-size: 1rem;
+  font-weight: normal;
+  /* padding: 1rem 1rem; */
+  /* box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2); */
+  border-radius: 15px;
+  margin: 1rem 0rem;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.franchiseName {
+  font-weight: bold;
+  color: var(--jetblack);
+}
+
+.planAmount {
+  font-weight: bold;
+  color: var(--jetblack);
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.button {
+  margin-left: 1rem;
+  opacity: 0.75;
+  background-color: var(--honoblue);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--orangepeel);
+  opacity: 1;
+}
+
+#accept {
+  background-color: green;
+}
+
+#reject {
+  background-color: red;
+}
+
+.greenText {
+  color: green;
+  font-weight: bold;
+}
+
+.redText {
+  color: red;
+  font-weight: bold;
+}
+
+.description {
+  background-color: var(--snowwhite);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.mode {
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.detail {
+  margin: 0;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--honoblue);
+}
+
+.span {
+  color: var(--jetblack);
+}
+
+@media (max-width: 576px) {
+  .planAmount {
+    display: none;
+  }
+
+  .detail {
+    padding-left: 0.5rem;
+  }
+}

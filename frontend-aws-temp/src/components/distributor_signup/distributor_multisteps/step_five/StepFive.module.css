@@ -1,0 +1,39 @@
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.btn {
+  margin: 2rem 0;
+}
+
+.mainContainer {
+  padding: 1rem;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 1rem; /* Adds space between items */
+  justify-content: center; /* Centers items horizontally */
+  padding: 1rem; /* Adds padding around the container */
+}
+
+.flexItem {
+  flex: 1 1 300px; /* Allows items to grow, shrink and sets a base width */
+  width: 200px; /* Maximum width for items */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .flexContainer {
+    justify-content: left; /* Centers items horizontally */
+    padding: 0rem; /* Adds padding around the container */
+  }
+}

@@ -1,0 +1,62 @@
+.filterButton {
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 0.1rem solid grey;
+  background-color: transparent;
+}
+
+.options {
+  color: var(--jetblack);
+}
+
+.filterButton:hover {
+  background-color: grey;
+}
+.modalTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--jetblack);
+}
+
+.checkboxGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.applyButton {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.applyButton:hover {
+  background-color: #45a049;
+}
+
+.customOverlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.customModalContent {
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+.transactionHistoryModal .close {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .checkboxGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

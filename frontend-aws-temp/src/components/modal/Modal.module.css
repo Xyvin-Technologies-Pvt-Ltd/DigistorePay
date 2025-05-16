@@ -1,0 +1,107 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.content {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.subContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+}
+
+.title {
+  color: var(--honoblue);
+  font-weight: bold;
+  font-size: 1.9rem;
+  padding-top: 2rem;
+  margin-top: 5px;
+  background-color: var(--white);
+}
+
+.close {
+  padding: .4rem;
+  cursor: pointer;
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+}
+
+.closeButton {
+  color: red;
+}
+
+.modalContent {
+  color: white;
+  width: 80vw;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .modalContent {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+/* 
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modalContent {
+  position: absolute;
+  width: 50rem;
+  line-height: 1.4;
+  place-items: center;
+}
+
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 992px) {
+  .modalContent {
+    width: 90vw;
+    height: auto;
+  }
+} */

@@ -1,0 +1,15 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 80px 2rem 0rem 2rem;
+  background-color: var(--snowwhite);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,65 @@
+.form {
+  position: static;
+}
+
+#styledInput {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#styledInput:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+#errors {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.detailSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detailHeadText {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heading {
+  color: var(--honoblue);
+}
+
+.addNewButton {
+  color: var(--honoblue);
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.disabledButton {
+  color: gray;
+  cursor: not-allowed;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.detailSection p {
+  margin: 0;
+}

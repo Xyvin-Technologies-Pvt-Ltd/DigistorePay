@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: calc(100% - 2rem);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--honoblue);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--honoblue);
+}
+
+.head,
+.button {
+  margin: 0;
+}
+
+.button:hover {
+  color: var(--orangepeel);
+  cursor: pointer;
+}

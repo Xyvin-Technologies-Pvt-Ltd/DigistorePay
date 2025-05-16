@@ -1,0 +1,44 @@
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.btn {
+  margin: 2rem 0;
+}
+
+.mainContainer {
+  padding: 1rem;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.flexItem {
+  flex: 1 1 300px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#styledInput {
+  font-size: 1rem;
+  color: var(--jetblack);
+}
+
+@media (max-width: 992px) {
+  .flexContainer {
+    justify-content: left;
+    padding: 0rem;
+  }
+}

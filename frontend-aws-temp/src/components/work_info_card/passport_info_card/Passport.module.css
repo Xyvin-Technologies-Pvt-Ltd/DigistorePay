@@ -1,0 +1,33 @@
+.heading {
+  font-weight: bold;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+
+.documentImages {
+  width: 300px;
+}
+
+.customModalContent {
+  background-color: var(--white);
+  padding: .5rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalPic {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .basic {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

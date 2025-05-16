@@ -1,0 +1,115 @@
+#styledInput {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+  width: calc(100% - 2.1rem);
+}
+
+#styledInput:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+.styledropdown {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  height: 3rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+  width: calc(100%);
+}
+
+.styledropdown:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+.detailSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.addMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.detailHeadText {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--jetblack);
+}
+
+.addNewButton {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+}
+
+.disabledButton {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: red;
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.deleteBtn {
+  color: red;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.deleteBtn:hover {
+  color: white;
+  border-radius: 15px;
+  background-color: red;
+  padding: 0rem 1rem;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.addNewButton:hover {
+  color: var(--orangepeel);
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin: 0;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#errors {
+  color: red;
+  margin: 0 0 1rem 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .inputsContainer {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: static;
+}
+
+.serviceLabel{
+  font-weight: bold;
+  color: var(--jetblack);
+}
+
+.styledInput {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+}
+
+.styledInput:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+.errors {
+  color: red;
+  margin: 0 0 1rem 0;
+}
+.fileUpload {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.fileUpload label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--honoblue);
+}
+
+.fileUpload input {
+  border: none;
+  padding: 0;
+}
+
+.radioContainer {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dropdownContainer {
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  width: 100%;
+  height: 3rem;
+  background: var(--white);
+  margin-top: 1rem;
+  border: 1px solid var(--honoblue);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--jetblack);
+  padding: 0.25rem 1rem;
+}
+
+.dropdown:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+.commission {
+  color: var(--mint);
+  font-weight: bold;
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.labelstyle {
+  font-weight: 500;
+  color: var(--jetblack);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}

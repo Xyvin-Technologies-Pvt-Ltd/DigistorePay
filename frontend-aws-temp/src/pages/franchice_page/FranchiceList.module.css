@@ -1,0 +1,296 @@
+.container {
+  background-color: var(--white);
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 0.2rem 1.4rem;
+}
+.titleContent {
+  text-align: center;
+  color: var(--honoblue);
+  flex: 1;
+}
+.downloadIcon {
+  margin-left: auto;
+  font-size: larger;
+}
+.modalContent {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.modalHeading {
+  color: var(--honoblue);
+}
+.dateContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+#styledInput {
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+}
+
+#styledInput:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+.DatePicker {
+  width: calc(100% - 2rem);
+  margin-bottom: 1rem;
+}
+.modalButtons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* .buttonStyles {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  border: 2px solid var(--honoblue);
+  cursor: pointer;
+  margin-top: 0;
+  transition: 50ms;
+ color: white;
+} */
+
+.confirmButtonDisable {
+  border: 2px solid gray;
+  background-color: gray;
+  border-radius: 6px;
+  padding: 4px;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.confirmButtonEnable {
+  border: 2px solid var(--honoblue);
+  background-color: var(--honoblue);
+  border-radius: 6px;
+  padding: 4px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.controlPannel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/*search feild */
+.searchContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  border: 1px solid var(--honoblue);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.magnifier {
+  font-size: 24px;
+  font-weight: 700;
+}
+.searchBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.search {
+  /* padding: 8px 4px; */
+  border: none;
+  margin: 0;
+  outline: none;
+  width: 15em;
+  cursor: text;
+  height: 1.5rem;
+  width: 100%;
+}
+.search::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+}
+.controller {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.btn {
+  padding: 4px 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btnname {
+  font-size: 17px;
+  font-weight: 500;
+}
+/*dropdown style*/
+
+.dropDownSelect {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.dropDownSelect:focus {
+  border-color: var(--honoblue);
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.3);
+}
+/*table style start here*/
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableContent {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px 18px;
+  margin-right: 15px;
+}
+
+.tableContainer {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.tableContainer th {
+  background-color: var(--honoblue);
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.tableContainer td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  max-width: 220px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+.tableContainer tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableContainer tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.tableContainer tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tableContainer {
+  border-spacing: 0;
+}
+
+.tableContainer td,
+.tableContainer th {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+/* footer with page indicator and pagination */
+.footer {
+  padding: 0.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagenation {
+  border-radius: 8px;
+  border: 1px solid var(--honoblue);
+  padding: 0.2rem 0.7rem;
+  color: var(--white);
+  background-color: var(--honoblue);
+  margin: 0px 4px;
+  font-weight: 500;
+}
+.pagenation p {
+  margin: 0;
+  padding: 0;
+}
+.pageBtn {
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+}
+.pageBtn:hover {
+  transform: scale(1.5);
+}
+.symbols {
+  margin: 0;
+  padding: 0;
+}
+
+.dummy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*media query */
+@media screen and (max-width: 789px) {
+  .controller {
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+  .searchContainer {
+    flex-grow: 1;
+  }
+  /* .search {
+    width: 13em;
+  } */
+}
+
+@media (min-width: 750px) {
+  .dateContainer {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

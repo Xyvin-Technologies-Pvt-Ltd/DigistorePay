@@ -1,0 +1,74 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 2rem 1rem;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 1rem;
+}
+
+.heading p {
+  margin: 0;
+}
+
+#center{
+  margin-top: 0;
+  text-align: center;
+}
+
+.verifyText {
+  color: var(--jetblack);
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.noteText {
+  color: grey;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.lockIcon {
+  font-size: 6rem;
+  color: var(--honoblue);
+}
+
+.dropdownContainer {
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  width: 100%;
+  height: 3rem;
+  background: var(--white);
+  margin-top: 1rem;
+  border: 1px solid var(--honoblue);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--jetblack);
+  padding: 0.25rem 1rem;
+}
+
+.dropdown:focus-visible {
+  border: 1px solid var(--orangepeel);
+  outline: var(--orangepeel) auto 1px;
+}
+
+@media (min-width: 576px) {
+  .mainContainer {
+    padding: 2rem 3rem;
+  }
+}

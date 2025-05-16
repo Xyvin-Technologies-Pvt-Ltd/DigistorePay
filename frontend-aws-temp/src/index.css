@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --honoblue: #197bbd;
+  --mint: #68b684;
+  --white: #ffffff;
+  --orangepeel: #ffa62b;
+  --jetblack: #2d2d2a;
+  --snowwhite: #f9f8f8;
+  --darkishblue: rgb(23, 44, 100);
+
+  --mintcontrast: #64d97b;
+  --primarycontrast: #ffdd00;
+  --accentcontrast: #ff8f8f;
+
+  --mintalpha: rgb(100, 217, 123, 0.2);
+  --orangealpha: rgb(255, 221, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.react-datepicker-popper {
+  z-index: 50;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

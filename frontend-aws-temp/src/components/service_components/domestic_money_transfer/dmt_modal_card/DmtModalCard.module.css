@@ -1,0 +1,57 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1rem 1rem;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.btn {
+  background-color: var(--honoblue);
+  border-radius: 0.6rem;
+  color: var(--white);
+  font-size: 0.9rem;
+  padding: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--orangepeel);
+  color: var(--jetblack);
+}
+
+.detailsContainer {
+  padding: 1rem;
+}
+
+.success {
+  color: red;
+}
+
+.failure {
+  color: green;
+}
+
+.total {
+  font-weight: 800;
+}

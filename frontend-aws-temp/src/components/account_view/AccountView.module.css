@@ -1,0 +1,399 @@
+.mainContainer {
+  background-color: var(--white);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0rem;
+  padding: 1rem;
+}
+
+.digitalElementsIcon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+
+}
+
+.digitalElementsIcon:hover:after {
+  content: attr(title);
+}
+
+.green {
+  color: green;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.red {
+  color: red;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.profileImages {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--honoblue);
+  cursor: pointer;
+}
+
+.profileImages img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subContainer {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 2rem);
+}
+
+.minicontainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.franchiseName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 250px;
+}
+
+.ownerName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 250px;
+}
+
+.editTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.editIcon {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-left: 4px;
+}
+
+.planDiv {
+  display: flex;
+  align-items: center;
+}
+
+.accountType {
+  color: var(--honoblue);
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.planBtn {
+  border-radius: 5px;
+  margin-left: 1rem;
+  background-color: var(--honoblue);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.customModalContent {
+  background-color: var(--white);
+  padding: .5rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalPic {
+  width: 100%;
+  object-fit: cover;
+}
+
+.leftGridContent {
+  border-top: 1px solid rgb(222, 210, 210);
+}
+
+.tabContainer {
+  margin-top: 1rem;
+}
+
+/*style only for admin */
+.documentImagesimg {
+  width: 300px;
+}
+
+.verify {
+  display: flex;
+  /* gap: 0.7rem; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#verifiedMark {
+  font-size: 1.8rem;
+  color: var(--honoblue);
+}
+
+/*style for btn*/
+
+.verify {
+  display: flex;
+  /* gap: 0.7rem; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#verifiedMark {
+  font-size: 1.8rem;
+  color: var(--honoblue);
+}
+
+/*style for btn*/
+
+.toggleswitch {
+  position: relative;
+  width: 50px;
+  /* Smaller width */
+  display: inline-block;
+  text-align: left;
+  top: 4px;
+  right: 5px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0.1rem solid #ffffff;
+  /* Button border */
+  border-radius: 20px;
+  /* Rounded edges for the whole switch */
+  width: 48px;
+  /* Adjusted width */
+  height: 24px;
+  /* Adjusted height for a smaller look */
+  background-color: #7f7f7f;
+  /* Background color for the track */
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+  /* Smooth background change */
+}
+
+.switch {
+  display: block;
+  width: 20px;
+  /* Smaller switch width */
+  height: 19px;
+  /* Smaller switch height */
+  background: #ffffff;
+  position: absolute;
+  top: 0.1rem;
+  bottom: 0.1rem;
+  right: 25px;
+  border: 1px solid #ffffff;
+  /* Switch border */
+  border-radius: 50%;
+  /* Makes the switch circular */
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox:checked+.label {
+  background-color: var(--honoblue);
+  /* Green background when checked */
+}
+
+.checkbox:checked+.label .switch {
+  right: 2px;
+  /* Move switch to the left when checked */
+}
+
+.ModalContent {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.modalHeadig {
+  text-align: center;
+  color: var(--honoblue);
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.amountView {
+  margin: 0;
+  padding: 0;
+}
+
+.amountEditButton {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#green {
+  color: rgb(4, 159, 4);
+}
+
+#red {
+  color: red;
+}
+
+.selectMethode {
+  width: 102%;
+  height: 40px;
+  border: 2px solid var(--honoblue);
+  border-radius: 4px;
+  outline: inherit;
+  margin-bottom: 20px;
+  padding: 0 4px;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color 0.3s;
+}
+
+.dropdownItems {
+  padding: 20px 4px;
+}
+
+.amountInputFeild {
+  width: 97.6%;
+  padding: 12px 4px;
+  border: 2px solid var(--honoblue);
+  border-radius: 4px;
+  outline: inherit;
+  margin-bottom: 8px;
+}
+
+.amountmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px 2px;
+  gap: 8px;
+}
+
+#buttonStyle {
+  flex: 1;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 400;
+  transition: 40ms;
+  cursor: pointer;
+}
+
+.cancel {
+  border: 2px solid red;
+  background-color: red;
+}
+
+.confirm {
+  border: 2px solid var(--honoblue);
+  background-color: var(--honoblue);
+}
+
+.disabledButton {
+  background-color: grey;
+  cursor: not-allowed;
+  border: 2px solid grey;
+}
+
+#errors {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    grid-template-columns: 1fr 3fr;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .imgContainer {
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  .tabContainer {
+    margin-top: 3rem;
+  }
+
+  .verify {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* #modalPic {
+    height: 424px;
+  } */
+
+}
+
+@media (min-width: 992px) {
+  .amountInputFeild {
+    width: 100%;
+  }
+
+  .documentImagesimg {
+    height: 250px;
+    width: 400px;
+  }
+
+  .franchiseName {
+    font-size: 2rem;
+  }
+
+  /* 
+  #modalPic {
+    height: 438px;
+  } */
+
+}

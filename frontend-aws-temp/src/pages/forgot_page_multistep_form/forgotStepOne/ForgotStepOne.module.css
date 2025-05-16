@@ -1,0 +1,125 @@
+.mainContainer {
+  padding: 1rem;
+  width: 40%;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--honoblue);
+  margin-bottom: 3rem;
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.miniContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.labelStyle {
+  font-weight: 700;
+  color: var(--jetblack);
+}
+
+#styledInput {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--honoblue);
+  color: var(--jetblack);
+  font-size: 1.1rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: var(--honoblue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border: none;
+  align-self: center;
+}
+
+.btnDisabled {
+  margin-top: 1rem;
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border: none;
+  align-self: center;
+  opacity: 0.35;
+  background-color: grey;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: var(--orangepeel);
+  color: var(--jetblack);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  background-color: grey;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 70%;
+  }
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  #styledInput {
+    font-size: 1rem;
+    height: 2rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .mainContainer {
+    width: 70%;
+  }
+
+  #styledInput {
+    font-size: 1.1rem;
+  }
+  .heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

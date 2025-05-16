@@ -1,0 +1,68 @@
+.rechargeLayout {
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+  background-color: var(--snowwhite);
+}
+
+.headerText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: var(--jetblack);
+  margin-top: 3rem;
+}
+
+.service_container {
+  margin: 0;
+  padding-top: 70px;
+  position: relative;
+}
+
+.servicebar {
+  z-index: 4;
+  position: absolute;
+  top: 20px;
+  width: calc(100% - 10vw);
+  margin: 0 5vw;
+}
+
+.content {
+  background-color: rgb(210 228 240);
+  padding: 60px 0.5rem 1rem 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .headerText {
+    font-size: 2rem;
+  }
+
+  .service_container {
+    margin: 0 5vw;
+    padding-bottom: 80px;
+  }
+
+  .content {
+    border-radius: 15px;
+    padding: 60px 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .service_container {
+    margin: 0 6vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .service_container {
+    margin: 0 8vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .service_container {
+    margin: 0 10vw;
+  }
+}

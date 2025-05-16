@@ -1,0 +1,162 @@
+.container {
+  /* background-color: var(--snowwhite); */
+  background-color: #080c30;
+  display: block;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+.empowermentsession {
+  background-color: #080c30;
+  box-sizing: border-box;
+  padding-bottom: 1.4rem;
+}
+
+.empowermentsession2 {
+  background-color: #080c30;
+  color: #fff;
+}
+
+.empowermentsession2 h1 {
+  text-align: center;
+  font-size: 1.25em;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Pavelt", sans-serif;
+}
+.empowermentsessioncontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empowermentsession2content {
+  color: white;
+  font-size: 1.2em;
+  font-family: Poppins, sans-serif;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.empowermentsessionregister {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 10px;
+  width: 180px;
+  color: white;
+  background-color: var(--honoblue);
+}
+
+.empowermentsessionregister:hover {
+  color: #000;
+  background-color: var(--snowwhite);
+  border: 2px solid #000;
+}
+
+.empowermentsessioncontainer {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.empowermentsessiongrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin-right: 0.9rem;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.empowermentsessioncard {
+  background-color: #fff;
+  border-radius: 50px 50px;
+  color: #080c30;
+  padding: 0rem 1rem;
+  width: 93%;
+  height: 100%;
+}
+
+.empowermentsessioncard h2 {
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+.empowermentsessioncard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.empowermentsessioncard p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 577px) {
+  .empowermentsessiongrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .empowermentsessioncard {
+    width: 90%;
+  }
+
+  .empowermentsession2 h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 901px) {
+  .empowermentsessiongrid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .empowermentsessioncard {
+    width: 90%;
+  }
+
+  .empowermentsession2 h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1201px) {
+  .empowermentsessiongrid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 1rem;
+    margin: 10px;
+  }
+
+  .empowermentsessioncard {
+    width: 300px;
+  }
+
+  .empowermentsession2 h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1401px) {
+  .empowermentsessiongrid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 1rem;
+    margin: 10px;
+  }
+
+  .empowermentsessioncard {
+    width: 300px;
+  }
+
+  .empowermentsession2 h1 {
+    font-size: 2.5em;
+  }
+}

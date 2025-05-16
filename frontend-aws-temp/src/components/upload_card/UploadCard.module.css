@@ -1,0 +1,40 @@
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.namediv {
+  font-weight: 500;
+  /* margin-bottom: 0.5rem; */
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.inputFeild {
+  margin-top: 0.3rem;
+}
+
+.inputFeild::file-selector-button {
+  font-weight: bold;
+  background-color: var(--white);
+  color: var(--honoblue);
+  padding: 0.5em;
+  border: 1px solid var(--honoblue);
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .detailSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,25 @@
+.heading {
+  font-weight: bold;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.documentImages {
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .basic {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

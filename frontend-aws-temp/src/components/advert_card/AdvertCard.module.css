@@ -1,0 +1,14 @@
+.adContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ad {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+#sticky {
+  position: sticky;
+  top: 100px;
+}

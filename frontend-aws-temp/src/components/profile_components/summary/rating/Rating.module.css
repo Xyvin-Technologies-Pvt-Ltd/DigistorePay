@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: calc(100% - 2rem);
+}
+.head {
+  margin: 0;
+  color: var(--honoblue);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.subhead {
+  margin: 0;
+  color: grey;
+  font-style: italic;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.95rem;
+  padding: 1rem 1rem;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+
+.name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 1.3rem;
+  color: gold;
+  margin: 0 2px;
+}

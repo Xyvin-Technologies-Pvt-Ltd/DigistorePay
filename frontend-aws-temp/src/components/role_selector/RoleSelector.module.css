@@ -1,0 +1,28 @@
+.radioContainer {
+  display: flex;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.radioBtn {
+  display: none;
+}
+
+.radioLabel {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.radioLabel:not(:last-of-type) {
+  border-right: 1px solid var(--honoblue);
+}
+
+.radioBtn:checked + .radioLabel {
+  color: #ffffff;
+  background: var(--honoblue);
+}
